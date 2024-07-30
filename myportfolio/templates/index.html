@@ -1,0 +1,230 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shariful Islam - Portfolio</title>
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .hero {
+      background: url('{% static "images/background.png" %}') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .skills, .portfolio, .testimonials, .contact { padding: 60px 0; }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-text {
+      flex: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-white text-black">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Shariful Islam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">Shariful Islam</h1>
+      <p class="lead">Python Web Scraping Expert</p>
+      <p><a href="#contact" class="btn btn-primary btn-lg">Hire Me</a></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I have strong working experience in the following platforms:</p>
+      <ul>
+        <li>Data Collection</li>
+        <li>Data Scraping</li>
+        <li>Data Mining from any website</li>
+        <li>Data Extraction</li>
+        <li>Contact Research</li>
+        <li>E-mail scrapping</li>
+        <li>Information Gathering</li>
+        <li>Searching</li>
+        <li>Full Names Scraping</li>
+        <li>Business Names Scraping</li>
+        <li>Addresses Scraping</li>
+        <li>Phone Number Scraping</li>
+        <li>Websites Scraping</li>
+        <li>Addresses Scraping</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills bg-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <ul>
+          <li>Python</li>
+          <li>Lead Generation</li>
+          <li>Web Scraping</li>
+          <li>Beautiful Soup</li>
+          <li>Scrapy</li>
+          <li>Selenium</li>
+          <li>API</li>
+          <li>Data Scraping</li>
+          <li>Email List</li>
+          <li>List Building</li>
+          <li>Data Mining</li>
+          <li>LinkedIn Lead Generation</li>
+          <li>B2B Lead Generation</li>
+          <li>Prospect List</li>
+          <li>Contact List</li>
+      </ul>
+      
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="row">
+        <!-- Add your portfolio items here -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{% static 'images/p1.png' %}" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Real Estate Data Scraping</h5>
+              <p class="card-text"> I scrapped real state data from yellow pages</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{% static 'images/p2.png' %}" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Ecommerce Website's data Scraping</h5>
+              <p class="card-text">I Scrapped data from amazon, flipkart and many other website which have anti bot protection </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{% static 'images/p3.png' %}" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Scrapped Data from Google Map</h5>
+              <p class="card-text">I have scrapped data from google map using Selenium in Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials bg-light">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Fast and good work."</p>
+            <p><strong>Steve N.</strong> - New York, United States</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Good job, done quick. Thanks."</p>
+            <p><strong>James H.</strong> - New York, United States</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Great job, got everything I asked for."</p>
+            <p><strong>Robert	 S.</strong> - New York, United States</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form method="post" action="{% url 'home' %}">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container footer-container">
+      <div></div>
+      <p class="mb-0 footer-text">&copy; 2024 Shariful Islam</p>
+      <div>
+        <a href="https://www.facebook.com/tanvirmahamud.shariful.3/" class="text-white mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/TShariful/" class="text-white mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-shariful-islam-7b71161a1/" class="text-white mx-2">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/@tanvirmahamudshariful" class="text-white mx-2">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
